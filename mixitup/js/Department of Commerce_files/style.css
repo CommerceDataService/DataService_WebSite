@@ -1,0 +1,147 @@
+body, button{
+  font-family: 'SourceSansProRegular','Open Sans','Helvetica Neue',Arial,sans-serif;
+  color: #333;
+}
+ 
+/**
+ * Form & Button Styles
+ */
+
+h4{
+  font-weight: 120;
+  color: #333;
+}
+ 
+label{
+  font-weight: 00;
+  color: #333;
+}
+ 
+button{
+  display: inline-block;
+  padding: .1em .8em;
+  border: 0;
+  margin: 0 0;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+button.active{
+  background: #68b8c4;
+}
+
+button:focus{
+  outline: 0 none;
+}
+
+button:first-of-type{
+  margin-left: 0;
+}
+
+button:last-of-type{
+  margin-right: 0;
+}
+ 
+button:focus{
+  outline: 0 none;
+}
+ 
+.controls{
+  padding: 1%;
+}
+ 
+fieldset{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 1em 0 0;
+  padding: .5em;
+}
+
+.checkbox{
+  display: block;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.checkbox input[type="checkbox"]{
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  margin: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.checkbox label{
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  padding-left: 1.5em;
+}
+
+.checkbox label:before,
+.checkbox label:after{
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.checkbox label:before{
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  background: #ddd;
+  border-radius: 3px;
+}
+
+.checkbox label:after{
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: #68b8c4;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.checkbox input:checked ~ label:after{
+  opacity: 1;
+}
+
+.checkbox input:focus ~ label:before{
+  background: #eee;
+}
+
+/**
+ * Container/Target Styles
+ */
+
+.container{
+  padding: 0%;
+  text-align: center;
+}
+
+.container .mix,
+.container .gap{
+  width: 0px;
+  display: inline-block;
+  margin: 0 5%;
+}
+
+.container .mix{
+  width: 22%;
+  margin: 1%;
+  background: white;
+  display: none;
+}
+
