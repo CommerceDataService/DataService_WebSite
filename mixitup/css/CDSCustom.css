@@ -1,0 +1,144 @@
+.setWhiteBackground {
+	background-color: white;
+}
+
+.setBlueBackground {
+	background-color: #002952;
+}
+
+.setYellowBackground {
+	background-color: #879bb9;
+}
+
+.portfolio-modal .modal-content p {
+	margin-bottom: 18px;
+	line-height: 1.6;
+}
+
+.nameOnModal {
+	margin-top: 0px;
+}
+
+.modal-content {
+  margin: 70px;
+}
+
+/* This is the CSS for the close modal */
+div.modal-content .close-modal {
+  position: static;
+  top: 25px;
+  right: 25px;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+/* These next two create the X for the close modal*/
+div.modal-content .close-modal .lr {
+  z-index: 1051;
+  width: 1px;
+  height: 75px;
+  margin-left: 35px;
+  background-color: #222;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+div.modal-content .close-modal .lr .rl {
+  z-index: 1052;
+  width: 1px;
+  height: 75px;
+  margin-left: 1px;
+  background-color: #222;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+
+/* This was to create margins for the modals */
+div.modalTextStyles {
+  margin-bottom: 50px;
+}
+
+
+@media all and (min-width: 320px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {  
+   /* IE10+ specific styles go here */ 
+  .ie10up
+  .container .mix,
+  .container .gap{
+    width: 16%;
+  }
+}
+
+@media all and (min-width: 320px) {
+  .container .mix,
+  .container .gap{
+    width: 24%;
+  }
+}
+
+@media all and (min-width: 520px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {  
+   /* IE10+ specific styles go here */ 
+  .ie10up
+  .container .mix,
+  .container .gap{
+    width: 22%;
+  }
+}
+
+@media all and (min-width: 520px) {
+  .container .mix,
+  .container .gap{
+    width: 22%;
+  }
+}
+
+@media all and (min-width: 640px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {  
+   /* IE10+ specific styles go here */ 
+  .ie10up
+  .container .mix,
+  .container .gap{
+    width: 19%;
+  }
+}
+
+@media all and (min-width: 640px) {
+  .container .mix,
+  .container .gap{
+    width: 18%;
+  }
+}
+
+@media all and (min-width: 840px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {  
+   /* IE10+ specific styles go here */ 
+  .ie10up
+  .container .mix,
+  .container .gap{
+    width: 16%;
+  }
+}
+
+@media all and (min-width: 840px) {
+  .container .mix,
+  .container .gap{
+    width: 16%;
+  }
+}
+
+@media (min-width: 992px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {  
+   /* IE10+ specific styles go here */ 
+  .container {
+    width: 800px;
+  }
+}
+
+
+div.mix .pictureDiv {
+	background-color: blue;
+}
+
+.container .mix {
+	background-color: #879bb9;
+}
