@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+
+	<div id="container">
+		<div id="chartContainer" style="max-width: 600px; height: 500px; margin: 0 auto"></div>
+
+		<div id="secondContainer" style="max-width: 600px; height: 500px; margin: 0 auto"></div>
+	<!-- <div id="modalExample"></div> -->
+	</div>
+
+	<div class="modal fade col-lg-8 col-md-8 col-xs-11" id="exampleModal" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true">
+
+		<div class="modal-content">
+
+			<div class="close-modal" data-dismiss="modal">
+	                <div class="lr">
+	                        <div class="rl">
+	                        </div>
+	               </div>
+	        </div>
+
+	        <img id="modalPicture" src="" class="img-responsive">
+
+			<div id="bureauInfo">
+				<p id="modalName"></p>
+				<p id="modalInitiative"></p>
+				<p id="modalServices"></p>
+				<p id="modalObjective"></p>
+			</div>	
+		</div>	
+	</div>
+
+	<script   src="https://code.jquery.com/jquery-1.12.2.min.js"   integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk="   crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src='http://code.highcharts.com/highcharts.js'></script>
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+          font: 'SourceSansProRegular','Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+
+#secondContainer {
+  display: inline-block;
+  visibility: hidden;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+#chartContainer {
+  padding-top: 50px;
+  /*display: inline-block;*/
+  margin: 0 auto;
+}
+
+/* This is the CSS for the close modal */
+div.close-modal {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 200px;
+  position: static;
+  top: 25px;
+  right: 25px;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  cursor: pointer;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+/* These next two create the X for the close modal*/
+div.close-modal .lr {
+  z-index: 1051;
+  width: 1px;
+  height: 75px;
+  margin-left: 35px;
+  background-color: #222;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+div.close-modal .lr .rl {
+  z-index: 1052;
+  width: 1px;
+  height: 75px;
+  margin-left: 1px;
+  background-color: #222;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+
+div.modal {
+	margin: auto;
+	padding-left: 30px;
+  padding-top: 30px;
+}
+
+#modalName p {
+  font-weight: bold;
+}
+
+div.modal-content {
+  padding-top: 20px;
+}
+
+#modalPicture {
+  display: inline-block; 
+  vertical-align: baseline;
+  margin: 90px 21px 50px 15px;
+}
+
+div#bureauInfo {
+  position:relative; 
+  display:inline-block;
+  vertical-align: top;
+  margin-top: 90px;
+  margin-bottom: 70px;
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { 
+
+    /* This is the CSS for the close modal */
+    div.close-modal {
+      float: left;
+      margin-right: 30px;
+      margin-bottom: 20px;
+      position: static;
+      top: 25px;
+      right: 25px;
+      width: 75px;
+      height: 75px;
+      background-color: transparent;
+      cursor: pointer;
+      padding-left: 20px;
+      padding-top: 15px;
+    }
+
+    /* These next two create the X for the close modal*/
+    div.close-modal .lr {
+      z-index: 1051;
+      width: 1px;
+      height: 60px;
+      margin-left: 35px;
+      background-color: #222;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+
+    div.close-modal .lr .rl {
+      z-index: 1052;
+      width: 1px;
+      height: 60px;
+      margin-left: 1px;
+      background-color: #222;
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+    }
+
+    div.modal {
+      margin-left: 100px;
+      margin-top: 75px;
+    }
+
+    #modalName p {
+      font-size: 37px;
+      font-weight: bold;
+    }
+
+    #modalInitiative p {
+      font-size: 29px;
+    }
+
+    #modalServices p {
+      font-size: 29px;
+    }
+
+    #modalObjective p {
+      font-size: 29px;
+    }
+
+    #chartContainer {
+      height: 50%;
+    }
+
+    #modalPicture {
+      display: inline-block; 
+      vertical-align: baseline;
+      margin: 10px 35px;
+    }
+
+    div#bureauInfo {
+      position:relative; 
+      display:inline-block;
+      vertical-align: top;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      margin-left: 25px;
+    }
+}
+
+@media only screen 
+and (max-device-width : 374px) 
+and (orientation : portrait) {
+  
+  div.close-modal {
+    float: none;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen 
+and (max-device-width : 768px) 
+and (orientation : portrait) {
+  div.modal-content {
+    padding-top: 5px;
+  }
+
+  div.close-modal {
+    margin-right: 6px;
+    vertical-align: top;
+    display: inline-block;
+    height:auto;
+    padding-left: 0px;
+    margin-bottom: 3px;
+  }
+
+  img#modalPicture {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  div#bureauInfo {
+    margin-top: 2px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+
+  div.close-modal .lr {
+    width: 2px;
+    height: 35px;
+    margin-left: 23px;
+  }
+
+  div.close-modal .lr .rl {
+    width: 2px;
+    height: 35px;
+  }
+}
