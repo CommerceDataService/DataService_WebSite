@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <html lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/cds_pop.css">
-        <link rel="stylesheet" type="text/css" href="css/MixItUpCustom.css">  
+        <link rel="stylesheet" type="text/css" href="css/MixItUpCustom.css">
   </head>
 
   <body class="setBlueBackground" id="topOfBox" >
@@ -32,14 +32,14 @@
                             <button class="filter" data-filter=".office">Operations</button>
                         </fieldset>
                         <button id="Reset" style="background:darkred;color:white">Clear Filters</button>
-                    </div>     
+                    </div>
                     <div class="row"></div>
                 </div>
             </div>
     </form>
 
     <div id="Container" class="container topOfCont setBlueBackground">
-        
+
         <script id="thumbnailTemplate" type="text/x-handlebars-template">
           {{#each data}}
           <div class="{{teams}}" >
@@ -53,13 +53,33 @@
            {{/if}}
           </div>
           {{/each}}
-        </script>        
+        </script>
 
 
     </div>
 
-    
-    <div id="teamModals"></div>  
+
+    <div id="teamModals"></div>
+<!-- Modal for each story  -->
+    <script id="modalTemplate" type="text/x-handlebars-template">
+        {{#each data}}
+        <div class=" modal fade touchModal" id="{{first_name}}" tabindex="-1" role="dialog" aria-hidden="true" >
+        </div>
+    </div>
+
+
+          {{else}}
+                <img  src="BioPics/{{picture_file}}" width="100%" alt="{{first_name}} {{last_name}}" class="img-circle">
+           {{/if}}
+          </div>
+          {{/each}}
+        </script>
+
+
+    </div>
+
+
+    <div id="teamModals"></div>
 <!-- Modal for each story  -->
     <script id="modalTemplate" type="text/x-handlebars-template">
         {{#each data}}
@@ -73,15 +93,15 @@
                     </div>
                 </div>
 
-                <div class="container" > 
+                <div class="container" >
 
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-4">
-                            
+
                             <img class="img-responsive img-centered img-circle" src="BioPics/{{picture_file}}" alt="{{first_name}} {{last_name}}">
-                            
+
                         </div>
-                        <div class="col-lg-7  col-md-7 modalTextStyles" style="text-align:left; color: black">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 modalTextStyles" style="text-align:left; color: black">
 
                                 <!-- Bio Details Go Here -->
 
@@ -90,9 +110,10 @@
 
                                 <p><strong><u>Favorite Quote</u>: </strong><i style="font-style:italic"> {{quote}} </i> - {{quote_author}} </p>
 
-                                <p><strong><u>Life Story</u>: </strong> {{life_Story}}</p>
-                              
-                                <p><strong><u>So tell us, why CDS?</u></strong> {{why_cds}} </p>
+                                <p><strong><u>About Me</u>: </strong> {{life_Story}}</p>
+
+                                <p><strong><u>So {{first_name}}, why CDS?</u></strong> {{why_cds}} </p>
+
                         </div>
                     </div>
                 </div>
@@ -103,7 +124,7 @@
 
 
 
-    
+
     </div>
     </div>
         <script src='js/jquery.js'></script>
@@ -114,8 +135,8 @@
         <script src="js/index.js"></script>
         <script src="js/agency.js"></script>
 
-    
-    
-    
+
+
+
   </body>
 </html>

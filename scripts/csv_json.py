@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import csv, ujson as json, pprint
 
 pp = pprint.PrettyPrinter(indent=2)
@@ -8,7 +9,7 @@ def mapjson(course, uid, course_key = ['first_name','last_name','position','team
     return course_entry
 
 course_json = []
-with open('../data/CDS_Team_Responses_Sheet1.csv', 'rt') as f:
+with open('./data/CDS_Team_Responses.csv', 'rt') as f:
     courses = csv.reader(f)
     for i, course in enumerate(courses):
         # if i == 0:
