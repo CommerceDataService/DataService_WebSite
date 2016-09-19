@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import csv, ujson as json, pprint
 
 pp = pprint.PrettyPrinter(indent=2)

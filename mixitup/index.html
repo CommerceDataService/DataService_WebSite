@@ -64,26 +64,6 @@
     <script id="modalTemplate" type="text/x-handlebars-template">
         {{#each data}}
         <div class=" modal fade touchModal" id="{{first_name}}" tabindex="-1" role="dialog" aria-hidden="true" >
-        </div>
-    </div>
-
-
-          {{else}}
-                <img  src="BioPics/{{picture_file}}" width="100%" alt="{{first_name}} {{last_name}}" class="img-circle">
-           {{/if}}
-          </div>
-          {{/each}}
-        </script>
-
-
-    </div>
-
-
-    <div id="teamModals"></div>
-<!-- Modal for each story  -->
-    <script id="modalTemplate" type="text/x-handlebars-template">
-        {{#each data}}
-        <div class=" modal fade touchModal" id="{{first_name}}" tabindex="-1" role="dialog" aria-hidden="true" >
 
             <div class="modal-content setWhiteBackground" >
                 <div class="close-modal" data-dismiss="modal">
@@ -113,14 +93,16 @@
                                 <p><strong><u>About Me</u>: </strong> {{life_Story}}</p>
 
                                 <p><strong><u>So {{first_name}}, why CDS?</u></strong> {{why_cds}} </p>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        {{/each}}
-    </script>
+          {{/each}}
+        </script>
+
+
+    </div>
 
 
 
