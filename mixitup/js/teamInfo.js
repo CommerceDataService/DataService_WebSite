@@ -1,7 +1,7 @@
 
 $.ajax({
    type: 'GET',
-   url: 'cds_team.json',
+   url: 'cds_team_responses.json',
    dataType: 'json',
    success: function( data ) {
       
