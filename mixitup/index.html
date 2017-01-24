@@ -43,7 +43,7 @@
         <script id="thumbnailTemplate" type="text/x-handlebars-template">
           {{#each data}}
           <div class="{{teams}}" >
-          {{#if life_Story.length}}
+          {{#if about_me.length}}
 
               <a href="#{{first_name}}"  data-toggle="modal">
                 <img  src="BioPics/{{picture_file}}" width="100%" alt="{{first_name}} {{last_name}}" class="img-circle">
@@ -90,7 +90,7 @@
 
                                 <p><strong><u>Favorite Quote</u>: </strong><i style="font-style:italic"> {{quote}} </i> - {{quote_author}} </p>
 
-                                <p><strong><u>About Me</u>: </strong> {{life_Story}}</p>
+                                <p><strong><u>About Me</u>: </strong> {{about_me}}</p>
 
                                 <p><strong><u>So {{first_name}}, why CDS?</u></strong> {{why_cds}} </p>
                         </div>
